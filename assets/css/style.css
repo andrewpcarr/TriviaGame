@@ -7,12 +7,13 @@ body {
 .row {
 	background-color: #cc6e8c;
 	margin-top: 100px;
+	margin-bottom: 100px;
 	padding: 10px 0px 20px 0px; 
 	border: 10px dashed black;
 }
 
 h1 {
-	font-size: 56px;
+	font-size: 64px;
 }
 
 h2 {
@@ -25,3 +26,27 @@ h2 {
 	margin-right: 10px;
 }
 
+.radio-inline:hover {
+	color: white;
+}
+
+.radio-inline:visited {
+	color: white;
+}
+
+.fixed
+{
+    position: fixed;
+    top: 100px;
+    margin-left: 10px;
+    background-color: #cc6e8c;
+    color: #ffee83;
+    font-size: 48px;
+    border: 2px solid black;
+    padding: 0px 5px 0px 5px;
+}
+
+.btn {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
