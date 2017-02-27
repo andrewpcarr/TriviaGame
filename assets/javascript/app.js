@@ -106,6 +106,16 @@ $('.btn').on('click', function() {
 		noResponse++;
 	}
 
+	$('.container').css('display', 'none');
+	$('.score').css('display', 'block');
+	$('.fixed').css('display', 'none');
+
+	$('#right').html('Number right: ' + correct);
+	$('#wrong').html('Number wrong: ' + wrong);
+
+	if (noResponse > 0) {
+		$('#noResponse').html('No response: ' + noResponse);
+	}	
 	console.log(correct);
 	console.log(wrong);
 });

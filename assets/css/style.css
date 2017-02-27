@@ -50,3 +50,16 @@ h2 {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
+
+.questions {
+	display:block;
+}
+
+.score {
+	display: none;
+}
+
+#right, #wrong, #noResponse {
+	font-size: 48px;
+	color: #c0bfd1;
+}
