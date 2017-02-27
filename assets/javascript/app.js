@@ -2,7 +2,7 @@ var correct = 0;
 var wrong = 0;
 var noResponse = 0;
 
-var count = 31;
+var count = 61;
 var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 
 function timer()
@@ -25,7 +25,17 @@ function timer()
 
 timer();
 
-$('.btn').on('click', function() {
+$('.startGame').on('click', function() {
+	$('#preGame').css('display', 'none');
+
+	count = 61;
+
+	$('.fixed').css('display', 'block');
+	$('.questions').css('display', 'block');
+
+});
+
+$('.checkScore').on('click', function() {
 	if ($('#correct1').is(':checked')) {
 		correct++;
 	} else if ($('.wrong1').is(':checked')) {
@@ -106,7 +116,9 @@ $('.btn').on('click', function() {
 		noResponse++;
 	}
 
-	$('.container').css('display', 'none');
+	$('html, body').animate({ scrollTop: 0 }, 'fast');
+
+	$('.questions').css('display', 'none');
 	$('.score').css('display', 'block');
 	$('.fixed').css('display', 'none');
 
@@ -118,4 +130,17 @@ $('.btn').on('click', function() {
 	}	
 	console.log(correct);
 	console.log(wrong);
+});
+
+$('.replay').on('click', function() {
+	count = 61;
+	correct = 0;
+	wrong = 0;
+	noResponse = 0;
+
+	$('.questions').css('display', 'block');
+	$('.score').css('display', 'none');
+	$('.fixed').css('display', 'block');
+
+	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });

@@ -14,9 +14,17 @@
 </head>
 <body>
 <div class="fixed text-center"></div>
+<div class="container pregame" id="preGame">
+	<div class="row text-center">
+		<img src="assets/images/logo.png" id="logo">
+		<h1>The Trivia Game!</h1>
+		<h2>Click below to take the quiz.</h2>
+		<button type="button" class="btn btn-warning startGame">Begin!</button>
+	</div>
+</div>
 <div class="container questions">
 	<div class="row text-center">
-		<h1>BEGIN!</h1>
+		<h1>You Have 1 Minute!!!</h1>
 		<h2>1. In BMO Lost, who is BMO’s best friend and traveling companion?</h2>
 			<label class="radio-inline">
 			  <input type="radio" name="q1" id="correct1" value="option1"> A soap bubble
@@ -157,15 +165,17 @@
 			  <input type="radio" name="q10" class="wrong10" value="option4"> Eating
 			</label>
 			<br><br><br>
-			<button type="button" class="btn btn-warning">Check Score!</button>
+			<button type="button" class="btn btn-warning checkScore">Check Score!</button>
 	</div>
 </div>
 <div class="container score">
 	<div class="row text-center">
+		<img src="assets/images/score.gif" class="scoreGif">
 		<h1>Your Score:</h1>
 		<div id="right"></div>
 		<div id="wrong"></div>
 		<div id='noResponse'></div>
+		<button type="button" class="btn btn-warning replay">Try Again?</button>
 	</div>
 </div>
 
