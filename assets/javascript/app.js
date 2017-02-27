@@ -1,10 +1,13 @@
+// Declaring variables to hold number correct, incorrect, and no response
 var correct = 0;
 var wrong = 0;
 var noResponse = 0;
 
+// Our timer variables
 var count = 61;
 var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 
+// This gets the clock running
 function timer()
 {
   count = count-1;
@@ -25,6 +28,7 @@ function timer()
 
 timer();
 
+// Start Game button
 $('.startGame').on('click', function() {
 	$('#preGame').css('display', 'none');
 
@@ -35,6 +39,7 @@ $('.startGame').on('click', function() {
 
 });
 
+// This button tabulates the score and moves to the score screen
 $('.checkScore').on('click', function() {
 	if ($('#correct1').is(':checked')) {
 		correct++;
@@ -132,6 +137,7 @@ $('.checkScore').on('click', function() {
 	console.log(wrong);
 });
 
+// Button to reset the game
 $('.replay').on('click', function() {
 	count = 61;
 	correct = 0;
