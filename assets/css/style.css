@@ -80,3 +80,9 @@ h2 {
 #logo {
 	margin: 30px;
 }
+
+.scoreGif {
+	margin-top: 20px;
+	border: 2px solid black;
+	border-radius: 100px;
+}
